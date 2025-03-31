@@ -1,0 +1,49 @@
+.menu {
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    top: 10em;
+    background: #fffd;
+    height: calc(100vh - 10em);
+    overflow-y: scroll;
+    display: none;
+}
+
+.menu.visible {
+    display: flex;
+}
+
+.menu span {
+    font-style: normal;
+    position: fixed;
+    margin: -3em;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 0.7em;
+    border: 1px solid black;
+    border-radius: .3em;
+    text-align: center;
+    margin: 0.4em;
+    min-width: 10em;
+    text-shadow: 1px 1px 0 black;
+}
+
+a.beginner {
+    background: radial-gradient(transparent, 80%, green);
+}
+a.intermediate {
+    background: radial-gradient(transparent, 80%, orange);
+}
+a.advanced {
+    background: radial-gradient(transparent, 80%, blue);
+}
+a.expert {
+    background: radial-gradient(transparent, 80%, red);
+}

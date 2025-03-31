@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&family=Work+Sans:ital,wght@1,900&display=swap");
+
+.game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#controls {
+    font-family: "Press Start 2P", cursive;
+}
+
+.title {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    translate: -50%;
+    font-size: xxx-large;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 0 black;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+}
+
+.title span:first-of-type {
+    color: #ec1901;
+}
+
+.title span:last-of-type {
+    color: #e86b0f;
+}
+
+.level {
+    position: absolute;
+    bottom: 6em;
+    width: 100%;
+    font-size: large;
+    text-align: center;
+}
+
+.level span {
+    color: #ec1901;
+    text-shadow: 1px 1px 0 black;
+}
+
+.level div {
+    font-style: normal;
+    padding: 0.4em;
+    margin: 0.4em;
+    text-transform: uppercase;
+}
+
+.level.beginner div {
+    background: green;
+}
+
+.level.intermediate div {
+    background: orange;
+}
+
+.level.advanced div {
+    background: blue;
+}
+
+.level.expert div {
+    background: red;
+}
